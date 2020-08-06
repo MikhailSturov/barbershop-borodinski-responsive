@@ -1,0 +1,49 @@
+.appointment {
+  width: auto;
+  padding: 0 20px;
+  color: #000000;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.appointment__button {
+  width: 100%;
+}
+
+.appointment__triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  fill: #292929;
+}
+
+@media (min-width: $tablet-width) {
+
+  .appointment {
+    padding-top: 0px;
+    padding-right: 64px;
+    padding-bottom: 80px;
+    padding-left: 64px;
+  }
+
+  .appointment__button {
+    min-height: 70px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .appointment {
+    padding-right: 0px;
+    padding-left: 0px;
+
+  }
+
+  .appointment__wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+}

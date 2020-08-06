@@ -1,0 +1,242 @@
+.work-sample--month .work-sample__photo-wrapper {
+  height: 480px;
+}
+
+.work-sample__photo-wrapper {
+  position: relative;
+  margin: 0;
+  height: 176px;
+  line-height: 0;
+  background: #e5ddd5;
+  text-align: center;
+  overflow: hidden;
+}
+
+.work-sample__info {
+  padding: 20px;
+  padding-bottom: 0;
+  border: 1px solid #e5ddd5;
+  border-top: none;
+}
+
+.work-sample__service {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+  margin-bottom: 15px;
+  margin-right: 10%;
+}
+
+.work-sample__service-comment {
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.work-sample--month {
+  position: relative;
+}
+
+.work-sample--month::before {
+  content: "Работа месяца";
+
+  position: absolute;
+  top: 401px;
+  left: 0px;
+  z-index: 2;
+
+  width: 140px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 11px;
+  padding-left: 16px;
+
+
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #826550;
+}
+
+.work-sample--month::after {
+  content: "";
+
+  position: absolute;
+  top: 401px;
+  left: 160px;
+  z-index: 2;
+
+  width: 16px;
+  height: 50px;
+
+  background-image: linear-gradient(to top left, transparent 50%, #826550 50%), linear-gradient(to top right, #826550 50%, transparent 50%);
+}
+
+.work-sample__icon{
+  max-width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.icon--haircut,
+.icon--shave {
+  width: 21px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.icon--mustache {
+  width: 45px;
+  height: 12px;
+  margin-right: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .work-sample {
+    display:  flex;
+    align-items: stretch;
+
+    margin-bottom: 40px;
+    padding: 0;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .work-sample--month::before {
+    top: 35px;
+    bottom: auto;
+    left: 0;
+  }
+
+  .work-sample--month::after {
+    top: 35px;
+    bottom: auto;
+    left: 160px;
+  }
+
+  .work-sample--month .work-sample__photo-wrapper,
+  .work-sample__photo-wrapper {
+    height: auto;
+  }
+
+  .work-sample__photo-wrapper {
+    position: relative;
+
+    width: 270px;
+  }
+
+  .works-sample__image {
+    position: relative;
+    z-index: 1;
+  }
+
+  .work-sample__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    width: calc(100% - 360px);
+    padding-top: 43px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+
+    border-top: 1px solid #e5ddd5;
+    border-left: none;
+  }
+
+  .work-sample__info {
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+
+  .work-sample__title {
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .work-sample__title {
+    margin: 0;
+  }
+
+  .work-sample__services {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .work-sample--month .work-sample__photo-wrapper {
+    width: 480px;
+  }
+
+  .work-sample--month .work-sample__info {
+    width: 396px;
+    padding-top: 128px;
+    padding-right: 42px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+  }
+
+  .work-sample__services:first-child {
+    margin-bottom: 15px;
+  }
+
+  .work-sample--month::before {
+    top: 26px;
+    right: 0;
+    bottom: auto;
+    left: auto;
+  }
+
+  .work-sample--month::after {
+    top: 26px;
+    right: 160px;
+    bottom: auto;
+    left: auto;
+
+    background-image: linear-gradient(to top left, #826550 50%, transparent 50%), linear-gradient(to top right, transparent 50%, #826550 50%);
+  }
+
+  .work-sample:not(:first-child) {
+    flex-direction: column;
+    width: 294px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .work-sample__photo-wrapper {
+    width: auto;
+  }
+
+  .work-sample__info {
+    flex-grow: 1;
+
+    width: auto;
+    border-top: none;
+    border-left: 1px solid #e5ddd5;
+
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+  }
+
+  .work-sample--month .work-sample__info {
+    border-top: 1px solid #e5ddd5;
+    border-left: none;
+  }
+
+  .work-sample:not(:first-child) .work-sample__service {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,129 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider__prev,
+.slider__next {
+  display: none;
+}
+
+.slider__control-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 90px;
+  height: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider__radio {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  margin: 0 10px;
+  transform: rotate(45deg);
+  border: 1px solid #292929;
+  transition: background .4s linear;
+}
+
+.slider__input-radio:checked+.slider__radio {
+  background: #292929;
+}
+
+.slider__list {
+  width: 300%;
+  transition: transform .5s ease;
+}
+
+.slider__item {
+  float: left;
+  width: 33.333333%;
+}
+
+#review-1:checked+.slider__list {
+  transform: translate(0);
+}
+
+#review-2:checked+.slider__list {
+  transform: translate(-33.333333%);
+}
+
+#review-3:checked+.slider__list {
+  transform: translate(-66.666666%);
+}
+
+
+@media (min-width: $tablet-width) {
+
+  .slider__control-list {
+    background-color: #f8f5f2;
+    height: 32px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .slider__control-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+  }
+
+  .slider__prev,
+  .slider__next {
+    display: block;
+    position: relative;
+    padding: 0;
+    background: transparent;
+    border: 1px solid #e5ddd5;
+    height: 160px;
+    width: 55px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        border-color: #d5c9bd;
+      }
+
+    &:active {
+      background: #d5c9bd;
+      opacity: .3;
+    }
+  }
+
+  .slider__prev::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/left-arrow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .slider__next::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/right-arrow.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) rotate(180deg);
+  }
+
+}
+
