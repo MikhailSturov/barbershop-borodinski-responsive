@@ -42,7 +42,8 @@
               <svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16">
                 <polygon class="cls-1" points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" />
-                <polygon class="cls-1" points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" />
+                <polygon class="cls-1"
+                  points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" />
               </svg>
               Войти
             </a>
@@ -61,112 +62,117 @@
 
     <section class="appointment">
       <div class="appointment__wrapper">
-      <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="appointment__form" action="https://echo.htmlacademy.ru" method="post">
 
-        <fieldset class="appointment__text-input text-input">
-          <div class="text-input__name-wrapper">
-            <p class="text-input__item">
-              <label class="visually-hidden" for="text-input__surname">Фамилия</label>
-              <input class="text-input__input" id="text-input__surname" type="text" name="surname" placeholder="Фамилия">
-            </p>
-            <p class="text-input__item">
-              <label class="visually-hidden" for="text-input__name">Имя</label>
-              <input class="text-input__input" id="text-input__name" type="text" name="name" placeholder="Имя">
-            </p>
-            <p class="text-input__item">
-              <label class="visually-hidden" for="text-input__middle-name">Отчество</label>
-              <input class="text-input__input" id="text-input__middle-name" type="text" name="middle-name" placeholder="Отчество">
-            </p>
-          </div>
-          <div class="text-input__contacts-wrapper">
-            <p class="text-input__item">
-              <label class="visually-hidden" for="text-input__phone">Телефон</label>
-              <input class="text-input__input" id="text-input__phone" type="tel" name="phone" placeholder="Контактный телефон">
-            </p>
-            <p class="text-input__item">
-              <label class="visually-hidden" for="text-input__emale">E-mail</label>
-              <input class="text-input__input" id="text-input__emale" type="emale" name="emale" placeholder="Контактный e-mail">
-            </p>
-          </div>
-          <div class="text-input__message-wrapper">
-            <p class="text-input__item">
-              <label class="visually-hidden" for="text-input__message-text">Дополнительная информация</label>
-              <textarea class="text-input__comment" id="text-input__message-text" name="text" rows="10" cols="45"
-                placeholder="Доп. информация для мастера"></textarea>
-            </p>
-          </div>
-        </fieldset>
+          <fieldset class="appointment__text-input text-input">
+            <div class="text-input__name-wrapper">
+              <p class="text-input__item">
+                <label class="visually-hidden" for="text-input__surname">Фамилия</label>
+                <input class="text-input__input" id="text-input__surname" type="text" name="surname"
+                  placeholder="Фамилия">
+              </p>
+              <p class="text-input__item">
+                <label class="visually-hidden" for="text-input__name">Имя</label>
+                <input class="text-input__input" id="text-input__name" type="text" name="name" placeholder="Имя">
+              </p>
+              <p class="text-input__item">
+                <label class="visually-hidden" for="text-input__middle-name">Отчество</label>
+                <input class="text-input__input" id="text-input__middle-name" type="text" name="middle-name"
+                  placeholder="Отчество">
+              </p>
+            </div>
+            <div class="text-input__contacts-wrapper">
+              <p class="text-input__item">
+                <label class="visually-hidden" for="text-input__phone">Телефон</label>
+                <input class="text-input__input" id="text-input__phone" type="tel" name="phone"
+                  placeholder="Контактный телефон">
+              </p>
+              <p class="text-input__item">
+                <label class="visually-hidden" for="text-input__emale">E-mail</label>
+                <input class="text-input__input" id="text-input__emale" type="emale" name="emale"
+                  placeholder="Контактный e-mail">
+              </p>
+            </div>
+            <div class="text-input__message-wrapper">
+              <p class="text-input__item">
+                <label class="visually-hidden" for="text-input__message-text">Дополнительная информация</label>
+                <textarea class="text-input__comment" id="text-input__message-text" name="text" rows="10" cols="45"
+                  placeholder="Доп. информация для мастера"></textarea>
+              </p>
+            </div>
+          </fieldset>
 
-        <fieldset class="appointment__filter-radio filter-radio">
-          <legend class="filter-radio__title">Выберите модель бороды:</legend>
-          <ul class="filter-radio__list">
-            <li class="filter-radio__item">
-              <input class="filter-radio__input visually-hidden" id="radio-1" type="radio" name="beard-model"
-                value="admiral" checked>
-              <label class="filter-radio__label" for="radio-1">Адмирал</label>
-              <img src="img/beard-1.svg" alt="Адмирал">
-            </li>
-            <li class="filter-radio__item">
-              <input class="filter-radio__input visually-hidden" id="radio-2" type="radio" name="beard-model"
-                value="woodcutter">
-              <label class="filter-radio__label" for="radio-2">Лесоруб</label>
-              <img src="img/beard-2.svg" alt="Лесоруб">
-            </li>
-            <li class="filter-radio__item">
-              <input class="filter-radio__input visually-hidden" id="radio-3" type="radio" name="beard-model"
-                value="polar">
-              <label class="filter-radio__label" for="radio-3">Полярник</label>
-              <img src="img/beard-3.svg" alt="Полярник">
-            </li>
-            <li class="filter-radio__item">
-              <input class="filter-radio__input visually-hidden" id="radio-4" type="radio" name="beard-model"
-                value="boyar">
-              <label class="filter-radio__label" for="radio-4">Боярин</label>
-              <img src="img/beard-4.svg" alt="Боярин">
-            </li>
-            <li class="filter-radio__item">
-              <input class="filter-radio__input visually-hidden" id="radio-5" type="radio" name="beard-model"
-                value="sage">
-              <label class="filter-radio__label" for="radio-5">Мудрец</label>
-              <img src="img/beard-5.svg" alt="Мудрец">
-            </li>
-          </ul>
-          </legend>
-        </fieldset>
+          <fieldset class="appointment__filter-radio filter-radio">
+            <legend class="filter-radio__title">Выберите модель бороды:</legend>
+            <ul class="filter-radio__list">
+              <li class="filter-radio__item">
+                <input class="filter-radio__input visually-hidden" id="radio-1" type="radio" name="beard-model"
+                  value="admiral" checked>
+                <label class="filter-radio__label" for="radio-1">Адмирал</label>
+                <img src="img/beard-1.svg" alt="Адмирал">
+              </li>
+              <li class="filter-radio__item">
+                <input class="filter-radio__input visually-hidden" id="radio-2" type="radio" name="beard-model"
+                  value="woodcutter">
+                <label class="filter-radio__label" for="radio-2">Лесоруб</label>
+                <img src="img/beard-2.svg" alt="Лесоруб">
+              </li>
+              <li class="filter-radio__item">
+                <input class="filter-radio__input visually-hidden" id="radio-3" type="radio" name="beard-model"
+                  value="polar">
+                <label class="filter-radio__label" for="radio-3">Полярник</label>
+                <img src="img/beard-3.svg" alt="Полярник">
+              </li>
+              <li class="filter-radio__item">
+                <input class="filter-radio__input visually-hidden" id="radio-4" type="radio" name="beard-model"
+                  value="boyar">
+                <label class="filter-radio__label" for="radio-4">Боярин</label>
+                <img src="img/beard-4.svg" alt="Боярин">
+              </li>
+              <li class="filter-radio__item">
+                <input class="filter-radio__input visually-hidden" id="radio-5" type="radio" name="beard-model"
+                  value="sage">
+                <label class="filter-radio__label" for="radio-5">Мудрец</label>
+                <img src="img/beard-5.svg" alt="Мудрец">
+              </li>
+            </ul>
+            </legend>
+          </fieldset>
 
-        <fieldset class="appointment__filter-checkbox filter-checkbox">
-          <legend class="filter-checkbox__title">Дополнительные услуги:</legend>
-          <ul class="filter-checkbox__list">
-            <li class="filter-checkbox__item">
-              <input class="filter-checkbox__input visually-hidden" id="checkbox-1" type="checkbox" name="dye" checked>
-              <label class="filter-checkbox__label" for="checkbox-1">Подкрасить бороду</label>
-            </li>
-            <li class="filter-checkbox__item">
-              <input class="filter-checkbox__input visually-hidden" id="checkbox-2" type="checkbox" name="twist">
-              <label class="filter-checkbox__label" for="checkbox-2">Накрутить усы</label>
-            </li>
-            <li class="filter-checkbox__item">
-              <input class="filter-checkbox__input visually-hidden" id="checkbox-3" type="checkbox" name="comb">
-              <label class="filter-checkbox__label" for="checkbox-3">Причесать бороду</label>
-            </li>
-            <li class="filter-checkbox__item">
-              <input class="filter-checkbox__input visually-hidden" id="checkbox-4" type="checkbox" name="trim">
-              <label class="filter-checkbox__label" for="checkbox-4">Подровнять виски</label>
-            </li>
-            <li class="filter-checkbox__item">
-              <input class="filter-checkbox__input visually-hidden" id="checkbox-5" type="checkbox" name="grayhair">
-              <label class="filter-checkbox__label" for="checkbox-5">Убрать седину</label>
-            </li>
-            <li class="filter-checkbox__item">
-              <input class="filter-checkbox__input visually-hidden" id="checkbox-6" type="checkbox" name="polish">
-              <label class="filter-checkbox__label" for="checkbox-6">Отполировать лысину</label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset class="appointment__filter-checkbox filter-checkbox">
+            <legend class="filter-checkbox__title">Дополнительные услуги:</legend>
+            <ul class="filter-checkbox__list">
+              <li class="filter-checkbox__item">
+                <input class="filter-checkbox__input visually-hidden" id="checkbox-1" type="checkbox" name="dye"
+                  checked>
+                <label class="filter-checkbox__label" for="checkbox-1">Подкрасить бороду</label>
+              </li>
+              <li class="filter-checkbox__item">
+                <input class="filter-checkbox__input visually-hidden" id="checkbox-2" type="checkbox" name="twist">
+                <label class="filter-checkbox__label" for="checkbox-2">Накрутить усы</label>
+              </li>
+              <li class="filter-checkbox__item">
+                <input class="filter-checkbox__input visually-hidden" id="checkbox-3" type="checkbox" name="comb">
+                <label class="filter-checkbox__label" for="checkbox-3">Причесать бороду</label>
+              </li>
+              <li class="filter-checkbox__item">
+                <input class="filter-checkbox__input visually-hidden" id="checkbox-4" type="checkbox" name="trim">
+                <label class="filter-checkbox__label" for="checkbox-4">Подровнять виски</label>
+              </li>
+              <li class="filter-checkbox__item">
+                <input class="filter-checkbox__input visually-hidden" id="checkbox-5" type="checkbox" name="grayhair">
+                <label class="filter-checkbox__label" for="checkbox-5">Убрать седину</label>
+              </li>
+              <li class="filter-checkbox__item">
+                <input class="filter-checkbox__input visually-hidden" id="checkbox-6" type="checkbox" name="polish">
+                <label class="filter-checkbox__label" for="checkbox-6">Отполировать лысину</label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <button class="appointment__button button button-brown" type="submit">Отправить заявку</button>
-      </form>
-    </div>
+          <button class="appointment__button button button-brown" type="submit">Отправить заявку</button>
+        </form>
+      </div>
 
       <svg class="appointment__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 160"
         preserveAspectRatio="none" width="100%" height="34">
@@ -175,35 +181,35 @@
       </svg>
     </section>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <b class="contacts__title">Барбершоп Бородинский</b>
-          <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
-          <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="page-footer__social social">
-          <p class="social__title">Давайте дружить!</p>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#">Мы в Вконтакте</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--insta" href="#">Мы в Инстаграме</a>
-            </li>
-          </ul>
-        </div>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link button" href="#">Sturov</a>
-        </div>
-      </div>
-    </footer>
-
   </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</p>
+        <a class="contacts__phone" href="tel:+78125556666">+7 (812) 555-66-66</a>
+      </div>
+      <div class="page-footer__social social">
+        <p class="social__title">Давайте дружить!</p>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="#">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link button" href="#">Sturov</a>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/script.min.js"></script>
 

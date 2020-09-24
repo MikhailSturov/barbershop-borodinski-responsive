@@ -40,7 +40,8 @@ function style () {
 
 //Копирование и минификация JS
 function js () {
-  return gulp.src("./src/js/*.js")
+  return gulp.src("./src/js/scripts/*.js")
+    .pipe(concat('script.js'))
     .pipe(jsmin())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("./src/js"));
@@ -66,10 +67,12 @@ function watch () {
     server: {
         baseDir: "./src/"
     }
-  })
+  });
 
-  gulp.watch('./src/**/*.js');
-  gulp.watch('./src/**/*.css');
+  gulp.watch('./src/js/scripts/*.js', js);
+  gulp.watch('./src/scss/**/*.scss', style);
+  gulp.watch('./src/**/*.js').on('change',browserSync.reload);
+  gulp.watch('./src/**/*.css').on('change',browserSync.reload);
   gulp.watch('./src/*.html').on('change',browserSync.reload);
 }
 
@@ -82,5 +85,7 @@ gulp.task('copy', copy);
 
 //Сборка всех файлов в папку build
 gulp.task('build', gulp.series(clean, gulp.parallel(style,js,copy)));
-gulp.task('dev', gulp.series('build','watch'));
+//gulp.task('dev', gulp.series('build','watch'));
+//gulp.watch('./src/scss/**/*.scss', gulp.series('style'));
+
 
